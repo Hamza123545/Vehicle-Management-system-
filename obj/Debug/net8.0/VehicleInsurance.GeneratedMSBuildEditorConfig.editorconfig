@@ -1,0 +1,181 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = VehicleInsurance
+build_property.RootNamespace = VehicleInsurance
+build_property.ProjectDir = C:\Users\Muhammad Hamza\Desktop\VehicleInsurance\VehicleInsurance\VehicleInsurance\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Muhammad Hamza\Desktop\VehicleInsurance\VehicleInsurance\VehicleInsurance
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Auth/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Auth/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/billing/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYmlsbGluZ1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/billing/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYmlsbGluZ1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/billing/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYmlsbGluZ1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/billing/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYmlsbGluZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Claims/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhaW1zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Claims/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhaW1zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Claims/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhaW1zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Claims/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhaW1zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Customer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Customer/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Customer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Customer/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcU2hvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Estimate/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0aW1hdGVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Estimate/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0aW1hdGVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Estimate/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0aW1hdGVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Estimate/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0aW1hdGVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Estimate/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0aW1hdGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Estimate/MyEstimates.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0aW1hdGVcTXlFc3RpbWF0ZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Expense/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZW5zZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Expense/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZW5zZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Expense/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZW5zZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Expense/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZW5zZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Frontend/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJvbnRlbmRcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Policy/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9saWN5XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Policy/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9saWN5XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Policy/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9saWN5XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Policy/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9saWN5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Reports/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Vehicle/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Vehicle/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Vehicle/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Vehicle/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Muhammad Hamza/Desktop/VehicleInsurance/VehicleInsurance/VehicleInsurance/Views/Vehicle/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
