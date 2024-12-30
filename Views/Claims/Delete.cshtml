@@ -1,0 +1,20 @@
+﻿@model VehicleInsurance.Models.Claim
+
+<h2>Delete Claim</h2>
+
+<h3>Are you sure you want to delete this claim?</h3>
+
+<div>
+    <p><strong>Claim ID:</strong> @Model.ClaimID</p>
+    <p><strong>Policy Number:</strong> @Model.Policy.PolicyNumber</p>
+    <p><strong>Date of Accident:</strong> @Model.DateOfAccident.ToShortDateString()</p>
+    <p><strong>Place of Accident:</strong> @Model.PlaceOfAccident</p>
+    <p><strong>Insured Amount:</strong> @Model.InsuredAmount</p>
+    <p><strong>Claimable Amount:</strong> @Model.ClaimableAmount</p>
+</div>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="ClaimID" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a href="@Url.Action("Index", "Claims")" class="btn btn-secondary">Cancel</a>
+</form>

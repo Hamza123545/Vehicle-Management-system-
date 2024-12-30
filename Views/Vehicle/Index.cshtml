@@ -1,0 +1,60 @@
+﻿@model IEnumerable<VehicleInsurance.Models.Vehicle>
+
+@{
+    Layout = "../Shared/_Layout.cshtml";
+    ViewData["Title"] = "Vehicle Management";
+}
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">All Vehicle</h4>
+                    <div class="table-responsive">
+                        <a href="@Url.Action("Create", "Vehicle")" class="btn btn-primary">Create New Vehicle</a>
+                        <table class="table table-striped mt-3">
+                            <thead>
+        <tr>
+            <th>Id</th>
+                                    <th>Vehicle Name</th>
+                                    <th>Vehicle OwnerName</th>
+                                    <th>Vehicle Model</th>
+                                    <th>Vehicle Version</th>
+                                    <th>Vehicle Rate</th>
+                                    <th>Vehicle Warranty</th>
+                                    <th>Vehicle BodyNumber</th>
+                                    <th>Vehicle EngineNumber</th>
+                                    <th>Vehicle Number</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var vehicle in Model)
+        {
+            <tr>
+                <td>@vehicle.VehicleID</td>
+                <td>@vehicle.VehicleName</td>
+                <td>@vehicle.VehicleOwnerName</td>
+                <td>@vehicle.VehicleModel</td>
+                <td>@vehicle.VehicleVersion</td>
+                <td>@vehicle.VehicleRate</td>
+                <td>@vehicle.VehicleWarranty</td>
+                <td>@vehicle.VehicleBodyNumber</td>
+                <td>@vehicle.VehicleEngineNumber</td>
+                <td>@vehicle.VehicleNumber</td>
+                <td>
+                                            <a href="@Url.Action("Details", "Vehicle", new { id = vehicle.VehicleID })" class="btn btn-secondary btn-sm">Details</a>
+                                            <a href="@Url.Action("Edit", "Vehicle", new { id = vehicle.VehicleID })" class="btn btn-info btn-sm">Edit</a>
+                                            <a href="@Url.Action("Delete", "Vehicle", new { id = vehicle.VehicleID })" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

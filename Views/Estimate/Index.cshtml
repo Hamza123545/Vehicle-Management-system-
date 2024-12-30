@@ -1,0 +1,59 @@
+﻿@model IEnumerable<VehicleInsurance.Models.Estimate>
+@{
+    Layout = "../Shared/_Layout.cshtml";
+    ViewData["Title"] = "Estimate Management";
+}
+
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">All Estimate</h4>
+                    <div class="table-responsive">
+                        <a href="@Url.Action("Create", "Estimate")" class="btn btn-primary">Create New Estimate</a>
+                        <table class="table table-striped mt-3">
+                            <thead>
+        <tr>
+            <th>Estimate ID</th>
+            <th>Customer Name</th>
+            <th>EstimateNumber</th>   
+            <th>Customer PhoneNumber</th>
+            <th>Vehicle Name</th>
+            <th>Vehicle Model</th>
+            <th>Vehicle Rate</th>
+            <th>Vehicle Warranty</th>
+            <th>Vehicle PolicyType</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var estimate in Model)
+        {
+            <tr>
+                <td>@estimate.EstimateId</td>
+                 <td>@estimate.Customer.CustomerName</td>
+                <td>@estimate.EstimateNumber</td>
+                <td>@estimate.CustomerPhoneNumber</td>
+                <td>@estimate.VehicleName</td>
+                <td>@estimate.VehicleModel</td>
+                <td>@estimate.VehicleRate</td>
+                <td>@estimate.VehicleWarranty</td>
+                <td>@estimate.VehiclePolicyType</td>
+                <td>
+                                            <a href="@Url.Action("Details", "Estimate", new { id = estimate.EstimateId })" class="btn btn-secondary btn-sm">Details</a>
+                                            <a href="@Url.Action("Edit","Estimate", new { id = estimate.EstimateId })" class="btn btn-info btn-sm">Edit</a>
+                    <a href="@Url.Action("Delete","Estimate", new { id = estimate.EstimateId })" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

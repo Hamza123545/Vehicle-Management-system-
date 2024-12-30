@@ -1,0 +1,35 @@
+﻿@using VehicleInsurance.Models;
+@model Expense
+
+@{
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Edit Expense</h4>
+                    <form method="post" class="forms-sample">
+                        <input type="hidden" value="@Model.ExpenseID" name="ExpenseID" />
+                        <div class="form-group">
+                            <label for="ExpenseDate">Expense Date</label>
+                            <input type="date" name="ExpenseDate" class="form-control" id="ExpenseDate" required value="@Model.ExpenseDate.ToString("yyyy-MM-dd")">
+                        </div>
+    <div class="form-group">
+        <label>Expense Type</label>
+                            <input name="ExpenseType" value="@Model.ExpenseType" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Amount</label>
+                            <input name="Amount" value="@Model.Amount" type="number" step="0.01" class="form-control" />
+    </div>
+                        <button type="submit" class="btn btn-primary mr-2">Save Changes</button>
+                        <a href="@Url.Action("index","expense")" class="btn btn-light">Cancel</a>
+</form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

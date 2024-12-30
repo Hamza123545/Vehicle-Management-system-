@@ -1,0 +1,73 @@
+﻿@model VehicleInsurance.Models.Estimate
+@{
+    Layout = "../Shared/_Layout.cshtml";
+}
+<div class="content-wrapper">
+<div class="row">
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Edit Estimate</h4>
+                <form method="post" class="forms-sample">
+    <input type="hidden" value="@Model.EstimateId" name="EstimateId" />
+    <input type="hidden" value="@Model.CustomerID" name="CustomerID" />
+
+    <div  class="form-group">
+        <label for="EstimateNumber">Estimate Number</label>
+        <input type="number" class="form-control" id="EstimateNumber" name="EstimateNumber" value="@Model.EstimateNumber" required />
+    </div>
+
+    <div class="form-group">
+        <label for="CustomerID">Customer</label>
+                            <select class="form-control" id="CustomerID" name="CustomerName">
+            @foreach (var customer in ViewBag.Customers as List<VehicleInsurance.Models.Customer>)
+            {
+                <option value="@customer.CustomerName"
+                @(customer.CustomerID == Model.CustomerID ? "selected" : "")>
+                    @customer.CustomerName
+                </option>
+            }
+        </select>
+    </div>
+
+
+    <div class="form-group">
+        <label for="CustomerPhoneNumber">Customer Phone Number</label>
+        <input type="text" class="form-control" id="CustomerPhoneNumber" name="CustomerPhoneNumber" value="@Model.CustomerPhoneNumber" required />
+    </div>
+
+    <div class="form-group">
+        <label for="VehicleName">Vehicle Name</label>
+        <input type="text" class="form-control" id="VehicleName" name="VehicleName" value="@Model.VehicleName" required />
+    </div>
+
+    <div class="form-group">
+        <label for="VehicleModel">Vehicle Model</label>
+        <input type="text" class="form-control" id="VehicleModel" name="VehicleModel" value="@Model.VehicleModel" required />
+    </div>
+
+    <div class="form-group">
+        <label for="VehicleRate">Vehicle Rate</label>
+        <input type="number" class="form-control" id="VehicleRate" name="VehicleRate" value="@Model.VehicleRate" required />
+    </div>
+
+    <div class="form-group">
+        <label for="VehicleWarranty">Vehicle Warranty</label>
+        <input type="text" class="form-control" id="VehicleWarranty" name="VehicleWarranty" value="@Model.VehicleWarranty" required />
+    </div>
+
+    <div class="form-group">
+        <label for="VehiclePolicyType">Vehicle Policy Type</label>
+        <input type="text" class="form-control" id="VehiclePolicyType" name="VehiclePolicyType" value="@Model.VehiclePolicyType" required />
+    </div>
+
+
+
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                        <a href="@Url.Action("index","estimate")" class="btn btn-light">Cancel</a>
+</form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

@@ -1,0 +1,101 @@
+﻿@* @using VehicleInsurance.Models;
+@model Vehicle
+@{
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-header">
+                    <h4>@Model.VehicleName</h4>
+                </div>
+                <div class="card-body">
+                    <p><strong>Vehicle OwnerName:</strong> @Model.VehicleOwnerName</p>
+                    <p><strong>Vehicle Model:</strong> @Model.VehicleModel</p>
+                    <p><strong>Vehicle Version:</strong> @Model.VehicleVersion</p>
+                    <p><strong>Vehicle Rate:</strong> @Model.VehicleRate</p>
+                    <p><strong>Vehicle Rate:</strong> @Model.VehicleWarranty</p>
+                    <p><strong>Vehicle BodyNumber:</strong> @Model.VehicleBodyNumber</p>
+                    <p><strong>Vehicle EngineNumber:</strong> @Model.VehicleEngineNumber</p>
+                    <p><strong>Vehicle Number:</strong> @Model.VehicleNumber</p>
+                    <p>
+                            <a href="@Url.Action("index","vehicle")" class="btn btn-primary">Back to List</a>
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+ *@
+@using VehicleInsurance.Models
+@model Vehicle
+
+@{
+    Layout = "../Shared/_Layout.cshtml";
+    ViewData["Title"] = "Vehicle Details";
+}
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Vehicle Details</h4>
+                    <table class="table table-striped">
+                        <tr>
+                            <th>Vehicle ID</th>
+                            <td>@Model.VehicleID</td>
+                        </tr>
+                        <tr>
+                            <th>Vehicle Name</th>
+                            <td>@Model.VehicleName</td>
+                        </tr>
+                        <tr>
+                            <th>Vehicle OwnerName</th>
+                            <td>@Model.VehicleOwnerName</td>
+                        </tr>
+                        <tr>
+                            <th>Vehicle Model</th>
+                            <td>@Model.VehicleModel</td>
+                        </tr>
+                        <tr>
+                            <th>Vehicle Version</th>
+                            <td>@Model.VehicleVersion</td>
+                        </tr>
+                        <tr>
+                            <th>Vehicle Rate</th>
+                            <td>@Model.VehicleRate</td>
+                        </tr>
+                        <tr>
+                            <th>Vehicle Warranty</th>
+                            <td>@Model.VehicleWarranty</td>
+                        </tr>
+                        <tr>
+                            <th>Vehicle BodyNumber</th>
+                            <td>@Model.VehicleBodyNumber</td>
+                        </tr>
+                        <tr>
+                            <th>Vehicle EngineNumber</th>
+                            <td>@Model.VehicleEngineNumber</td>
+                        </tr>
+                        <tr>
+                            <th>Vehicle Number</th>
+                            <td>@Model.VehicleNumber</td>
+                        </tr>
+                    </table>
+                    <div class="mt-3">
+                        <a href="@Url.Action("Index", "Vehicle")" class="btn btn-light">Back to List</a>
+                        <a href="@Url.Action("Edit", "Vehicle", new { id = Model.VehicleID })" class="btn btn-info">Edit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

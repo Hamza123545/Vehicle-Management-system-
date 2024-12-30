@@ -1,0 +1,547 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <!-- Stylesheets -->
+    <link href="~/frontend/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/frontend/css/niceselect.css" rel="stylesheet" />
+    <link href="~/frontend/css/style.css" rel="stylesheet" />
+    <link href="~/frontend/css/responsive.css" rel="stylesheet" />
+
+    <!-- Switcher Mockup -->
+    <link href="~/frontend/css/color-switcher-design.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;family=Ubuntu:wght@300;400;500;700&amp;display=swap"
+          rel="stylesheet" />
+
+    <link rel="shortcut icon" href="~/frontend/images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="~/frontend/images/favicon.png" type="image/x-icon" />
+
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="main-homepage">
+        <div class="page-wrapper">
+            <!-- Loading -->
+            <div class="loading-window-outer">
+                <div class="loading-window">
+                    <div class="car">
+                        <div class="strike"></div>
+                        <div class="strike strike2"></div>
+                        <div class="strike strike3"></div>
+                        <div class="strike strike4"></div>
+                        <div class="strike strike5"></div>
+                        <div class="car-detail spoiler"></div>
+                        <div class="car-detail back"></div>
+                        <div class="car-detail center"></div>
+                        <div class="car-detail center1"></div>
+                        <div class="car-detail front"></div>
+                        <div class="car-detail wheel"></div>
+                        <div class="car-detail wheel wheel2"></div>
+                    </div>
+
+                    <div class="text">
+                        <span>Loading</span><span class="dots">...</span>
+                    </div>
+                </div>
+            </div>
+            <!-- End Loading -->
+            <!-- Main Header-->
+            <header class="main-header">
+                <!-- Header Upper -->
+                <div class="header-upper">
+                    <div class="auto-container">
+                        <div class="inner-container clearfix">
+                            <div class="logo-box">
+                                <div class="logo">
+                                    <a href="@Url.Action("Index","Home")"><img src="~/frontend/images/logo.png" alt="" title="" /></a>
+                                </div>
+                            </div>
+
+                            <div class="nav-outer clearfix">
+                                <!-- Mobile Navigation Toggler -->
+                                <div class="mobile-nav-toggler">
+                                    <span class="icon flaticon-menu-2"></span>
+                                </div>
+                                <!-- Main Menu -->
+                                <nav class="main-menu navbar-expand-xl">
+                                    <div class="navbar-header">
+                                        <!-- Toggle Button -->
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                                                aria-label="Toggle navigation">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+
+                                    <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                                        <ul class="navigation clearfix">
+                                            <li class="current dropdown">
+                                                <a href="@Url.Action("Index","Home")">Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="@Url.Action("About","Home")">About Us</a>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#">Services</a>
+                                                <ul>
+                                                    <li><a href="services.html">Services</a></li>
+                                                    <li>
+                                                        <a href="services-detail.html">Services Detail</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#">Blog</a>
+                                                <ul>
+                                                    <li><a href="blog.html">Our Blog</a></li>
+                                                    <li><a href="news-detail.html">Blog Single</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#">Team</a>
+                                                <ul>
+                                                    <li><a href="team.html">Team</a></li>
+                                                    <li>
+                                                        <a href="team-detail.html">Team Detail</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#">Pages</a>
+                                                <ul>
+                                                    <li><a href="login.html">Login</a></li>
+                                                    <li><a href="signup.html">Sign Up</a></li>
+                                                    <li><a href="privacy.html">Privacy Policy</a></li>
+                                                    <li><a href="terms.html">Terms & Condition</a></li>
+                                                    <li>
+                                                        <a href="insurance-form.html">Insurance Form</a>
+                                                    </li>
+                                                    <li><a href="not-found.html">Not Found</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact.html">Contact us</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+
+                                <!-- Main Menu End-->
+                                <div class="outer-box clearfix">
+                                    <!-- Phone Btn -->
+                                    <div class="phone-box">
+                                        <div class="box-inner">
+                                            <a class="phone" href="tel:+1555-89-7965">
+                                                +1555 89 7965
+                                                <span class="icon flaticon-call-2"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Header Upper-->
+                <!-- Sticky Header  -->
+                <div class="sticky-header">
+                    <div class="auto-container clearfix">
+                        <!--Logo-->
+                        <div class="logo pull-left">
+                            <a href="index-2.html" title=""><img src="~/frontend/images/logo-small.png" alt="" title="" /></a>
+                        </div>
+                        <!--Right Col-->
+                        <div class="pull-right">
+                            <!-- Mobile Navigation Toggler -->
+                            <div class="mobile-nav-toggler">
+                                <span class="icon flaticon-menu-2"></span>
+                            </div>
+                            <!-- Main Menu -->
+                            <nav class="main-menu navbar-expand-md">
+
+                            </nav>
+                            <!-- Main Menu End-->
+                            <!-- Main Menu End-->
+                            <div class="outer-box clearfix">
+                                <!-- Phone Btn -->
+                                <div class="phone-box">
+                                    <div class="box-inner">
+                                        <a class="phone" href="tel:+1555-89-7965">
+                                            +1555 89 7965 <span class="icon flaticon-call-2"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Sticky Menu -->
+                <!-- Mobile Menu  -->
+                <div class="mobile-menu">
+                    <div class="menu-backdrop"></div>
+                    <div class="close-btn">
+                        <span class="icon flaticon-multiply"></span>
+                    </div>
+
+                    <nav class="menu-box">
+                        <div class="nav-logo">
+                            <a href="index-2.html"><img src="~/frontend/images/logo.png" alt="" title="" /></a>
+                        </div>
+                        <div class="menu-outer">
+                            <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                        </div>
+                    </nav>
+                </div>
+                <!-- End Mobile Menu -->
+            </header>
+            <!-- End Main Header -->
+    <div>
+        @RenderBody()
+    </div>
+      <!-- Main Footer -->
+            <footer class="main-footer" style="background-image: url('@Url.Content("~/frontend/images/background/pattern-2.png")')")">
+        <!-- <div
+            class="top-pattern-layer"
+            style="background-image: url(images/background/pattern-1.png)"
+          ></div> -->
+        <div class="auto-container">
+          <!-- Upper Box -->
+          <div class="upper-box">
+            <div class="row clearfix">
+              <!-- Info Column -->
+              <div class="info-column col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-column">
+                  <span class="icon flaticon-call-2"></span>
+                  call now<br />
+                  <a href="tel:+10909876534">+10909876534</a>
+                </div>
+              </div>
+
+              <!-- Info Column -->
+              <div class="info-column col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-column">
+                  <span class="icon flaticon-email-2"></span>
+                  24*7 online Support<br />
+                  <a href="mailto:carsore@mail.com">carsore@mail.com</a>
+                </div>
+              </div>
+
+              <!-- Info Column -->
+              <div class="info-column col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-column">
+                  <span class="icon flaticon-maps-and-flags"></span>
+                  Office Adress<br />
+                  <strong>4309 Terry Lane, USA</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Upper Box -->
+
+          <!-- Widgets Section -->
+          <div class="widgets-section">
+            <div class="row clearfix">
+              <!-- Footer Column -->
+              <div class="footer-column col-lg-4 col-md-6 col-sm-12">
+                <div class="footer-widget logo-widget">
+                  <div class="logo">
+                                        <a href="index-2.html"><img src="~/frontend/images/footer-logo.png" alt="" /></a>
+                  </div>
+                  <div class="text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text.
+                  </div>
+                  <!-- Social Box -->
+                  <ul class="social-box">
+                    <li>
+                      <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                    </li>
+                    <li>
+                      <a href="https://www.twitter.com/" class="fab fa-twitter"></a>
+                    </li>
+                    <li>
+                      <a href="https://google.com/" class="fab fa-google"></a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/" class="fab fa-linkedin-in"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Footer Column -->
+              <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                <div class="footer-widget links-widget">
+                  <div class="row clearfix">
+                    <!-- Column -->
+                    <div class="column col-lg-6 col-md-6 col-sm-12">
+                      <h3>Company</h3>
+                      <ul class="list-links">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">our team</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">insurance</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">contact us</a></li>
+                      </ul>
+                    </div>
+                    <!-- Column -->
+                    <div class="column col-lg-6 col-md-6 col-sm-12">
+                      <h3>Insurance</h3>
+                      <ul class="list-links">
+                        <li><a href="#">car insurance</a></li>
+                        <li><a href="#">bike insurance</a></li>
+                        <li><a href="#">bus insurance</a></li>
+                        <li><a href="#">mini truck insurance</a></li>
+                        <li><a href="#">jeep insurance</a></li>
+                        <li><a href="#">lorry insurance</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Footer Column -->
+              <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                <div class="footer-widget quote-widget">
+                  <h3>Request a Quote</h3>
+
+                  <!-- Quote Form -->
+                  <div class="quote-form">
+                    <form method="post" action="https://themeim.com/demo/carsore/appointment.html">
+                      <div class="clearfix">
+                        <div class="form-group">
+                          <input type="text" name="username" placeholder="Your Name *" required="" />
+                        </div>
+
+                        <div class="form-group">
+                          <input type="email" name="email" placeholder="Your Email" required="" />
+                        </div>
+
+                        <!--Form Group-->
+                        <div class="form-group">
+                          <select class="custom-select-box nice-select">
+                            <option>Your Subject</option>
+                            <option>Subject 01</option>
+                            <option>Subject 02</option>
+                            <option>Subject 03</option>
+                            <option>Subject 04</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <button class="theme-btn submit-btn" type="submit" name="submit-form">
+                            Submit Now
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <div class="clearfix">
+              <div class="pull-left">
+                <div class="copyright">
+                  Copyright &copy; 2021. All rights reserved by <br />
+                  <span>Carsore Company.</span>
+                </div>
+              </div>
+              <div class="pull-right">
+                <ul class="footer-nav">
+                  <li><a href="privacy.html">Privacy Policy</a></li>
+                  <li><a href="terms.html">Terms & Condition</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Main Footer -->
+
+      <!-- Calculator Palate  -->
+      <div class="calculator-palate">
+        <div class="calculator-trigger">
+          <i class="flaticon-keys"></i>
+        </div>
+        <span class="palate-tag">Calculator</span>
+        <div class="palate-content">
+          <!-- Styled Form -->
+          <div class="styled-form style-two">
+            <form>
+              <!-- Form Group -->
+              <div class="form-group">
+                <label>What is your vehicle number*</label>
+                <span class="icon flaticon-user-2"></span>
+                <input type="text" placeholder="your policy number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+              </div>
+
+              <!-- Form Group -->
+              <div class="form-group">
+                <label>What is your city*</label>
+                <span class="icon flaticon-edit"></span>
+                <select class="custom-select-box nice-select">
+                  <option>Your City</option>
+                  <option>Sydney</option>
+                  <option>Melbourne</option>
+                  <option>Adelaide</option>
+                  <option>Perth</option>
+                </select>
+              </div>
+
+              <!-- Form Group -->
+              <div class="form-group">
+                <label>What is your car model?*</label>
+                <span class="icon flaticon-edit"></span>
+                <select class="custom-select-box nice-select">
+                  <option>Your car model</option>
+                  <option>Hatchback</option>
+                  <option>Maruti Suzuki Swift</option>
+                  <option>Sedan</option>
+                  <option>Mercedes-Benz GLE</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>What is you car fuel type*</label>
+                <span class="icon flaticon-edit"></span>
+                <select class="custom-select-box nice-select">
+                  <option>Your Car fuel type</option>
+                  <option>Gasoline</option>
+                  <option>Diesel Fuel</option>
+                  <option>Bio-diesel</option>
+                  <option>Ethanol</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>What is you car Purchase date & year*</label>
+                <span class="icon flaticon-edit"></span>
+                <span class="calendar-icon flaticon-calendar"></span>
+                <input class="datepicker" autocomplete="off" type="text" name="username" value=""
+                  placeholder="DD/MM/YYYY" required />
+              </div>
+
+              <div class="row clearfix">
+                <!-- Column -->
+                <div class="column col-lg-6 col-md-6 col-sm-12">
+                  <h6>Vehicle for:</h6>
+                  <div class="form-group margin">
+                    <div class="radio-box">
+                      <input type="radio" name="remember-password" id="type-1" />
+                      <label for="type-1">Commercial use</label>
+                    </div>
+                  </div>
+                  <div class="form-group margin">
+                    <div class="radio-box">
+                      <input type="radio" name="remember-password" id="type-2" />
+                      <label for="type-2">Personal Use</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- Column -->
+                <div class="column col-lg-6 col-md-6 col-sm-12">
+                  <h6>Policy status:</h6>
+                  <div class="form-group margin">
+                    <div class="radio-box">
+                      <input type="radio" name="remember-password" id="type-3" />
+                      <label for="type-3">Policy Expired</label>
+                    </div>
+                  </div>
+                  <div class="form-group margin">
+                    <div class="radio-box">
+                      <input type="radio" name="remember-password" id="type-4" />
+                      <label for="type-4">Policy not expired</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <button type="submit" class="theme-btn btn-style-four">
+                  <span class="txt">Calculator </span><i class="fa fa-angle-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- End Calculator Palate  -->
+
+      <!-- Contact Palate  -->
+      <div class="cantact-palate">
+        <div class="calculator-trigger">
+          <i class="flaticon-envelope"></i>
+        </div>
+        <span class="palate-tag">Contact Form</span>
+        <div class="palate-content">
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <form method="post" action="https://themeim.com/demo/carsore/contact.html">
+              <div class="form-group">
+                <label>Enter Your Name*</label>
+                <input type="text" name="username" placeholder="Your Name" required />
+              </div>
+
+              <div class="form-group">
+                <label>Enter Your Email*</label>
+                <input type="email" name="email" placeholder="Your Email" required />
+              </div>
+
+              <div class="form-group">
+                <label>Subject (Optional)</label>
+                <input type="text" name="subject" placeholder="Your Subject" required />
+              </div>
+
+              <div class="form-group">
+                <label>Your Message</label>
+                <textarea name="message" placeholder="Type Your Message"></textarea>
+              </div>
+
+              <div class="form-group">
+                <button type="submit" class="theme-btn btn-style-four">
+                  <span class="txt">Send Now </span><i class="fa fa-angle-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <!-- eND Contact Form -->
+        </div>
+      </div>
+      <!-- End Contact Palate  -->
+    </div>
+  </div>
+  <!-- End pagewrapper -->
+
+  <!-- Scroll To Top -->
+  <div class="scroll-to-top scroll-to-target" data-target="html">
+    <span class="fa fa-arrow-up"></span>
+  </div>
+
+    <script src="~/frontend/js/jquery.js"></script>
+    <script src="~/frontend/js/popper.min.js"></script>
+    <script src="~/frontend/js/bootstrap.min.js"></script>
+    <script src="~/frontend/js/jquery.fancybox.js"></script>
+    <script src="~/frontend/js/appear.js"></script>
+    <script src="~/frontend/js/parallax.min.js"></script>
+    <script src="~/frontend/js/tilt.jquery.min.js"></script>
+    <script src="~/frontend/js/jquery.paroller.min.js"></script>
+    <script src="~/frontend/js/owl.js"></script>
+    <script src="~/frontend/js/wow.js"></script>
+    <script src="~/frontend/js/nav-tool.js"></script>
+    <script src="~/frontend/js/jquery-ui.js"></script>
+    <script src="~/frontend/js/jquery.nice-select.min.js"></script>
+    <script src="~/frontend/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="~/frontend/js/script.js"></script>
+    <script src="~/frontend/js/color-settings.js"></script>
+</body>
+</html>

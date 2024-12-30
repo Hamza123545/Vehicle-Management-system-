@@ -1,0 +1,35 @@
+﻿@model IEnumerable<VehicleInsurance.Models.Claim>
+
+<h2>Claims List</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Claim ID</th>
+            <th>Policy Number</th>
+            <th>Date of Accident</th>
+            <th>Place of Accident</th>
+            <th>Insured Amount</th>
+            <th>Claimable Amount</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var claim in Model)
+        {
+            <tr>
+                <td>@claim.ClaimID</td>
+                <td>@claim.Policy.PolicyNumber</td>
+                <td>@claim.DateOfAccident.ToShortDateString()</td>
+                <td>@claim.PlaceOfAccident</td>
+                <td>@claim.InsuredAmount</td>
+                <td>@claim.ClaimableAmount</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Claims", new { id = claim.ClaimID })">Edit</a> |
+                    <a href="@Url.Action("Delete", "Claims", new { id = claim.ClaimID })">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="@Url.Action("Create", "Claims")" class="btn btn-primary">Create New Claim</a>

@@ -1,0 +1,81 @@
+﻿@using VehicleInsurance.Models
+@model Policy
+
+@{
+    Layout = "../Shared/_Layout.cshtml";
+    ViewData["Title"] = "Policy Details";
+}
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Policy Details</h4>
+                    <table class="table table-striped">
+                        <tr>
+                            <th>Policy ID</th>
+                            <td>@Model.PolicyID</td>
+                        </tr>
+                        <tr>
+                            <th>Policy Number</th>
+                            <td>@Model.PolicyNumber</td>
+                        </tr>
+                        <tr>
+                            <th>Policy Date</th>
+                            <td>@Model.PolicyDate.ToShortDateString()</td>
+                        </tr>
+                        <tr>
+                            <th>Policy Duration</th>
+                            <td>@Model.PolicyDuration</td>
+                        </tr>
+                        <tr>
+                            <th>Customer Name</th>
+                            <td>@Model.Customer?.CustomerName</td>
+                        </tr>
+                        <tr>
+                            <th>Customer Phone Number</th>
+                            <td>@Model.Customer?.PhoneNumber</td>
+                        </tr>
+                        <tr>
+                            <th>Vehicle Name</th>
+                            <td>@Model.Vehicle?.VehicleName</td>
+                        </tr>
+                        <tr>
+                            <th>Vehicle Number</th>
+                            <td>@Model.Vehicle?.VehicleNumber</td>
+                        </tr>
+                        <tr>
+                            <th>Vehicle Rate</th>
+                            <td>@Model.Vehicle?.VehicleRate</td>
+                        </tr>
+                        <tr>
+                            <th>Vehicle Warranty</th>
+                            <td>@Model.Vehicle?.VehicleWarranty</td>
+                        </tr>
+                        <tr>
+                            <th>Vehicle Model</th>
+                            <td>@Model.Vehicle?.VehicleModel</td>
+                        </tr>
+                        <tr>
+                            <th>Vehicle Version</th>
+                            <td>@Model.Vehicle?.VehicleVersion</td>
+                        </tr>
+                        <tr>
+                            <th>Address Proof</th>
+                            <td>@Model.Customer?.AddressProof</td>
+                        </tr>
+                        <tr>
+                            <th>Is Active</th>
+                            <td>@(Model.IsActive ? "Yes" : "No")</td>
+                        </tr>
+                    </table>
+                    <div class="mt-3">
+                        <a href="@Url.Action("Index", "Policy")" class="btn btn-light">Back to List</a>
+                        <a href="@Url.Action("Edit", "Policy", new { id = Model.PolicyID })" class="btn btn-info">Edit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

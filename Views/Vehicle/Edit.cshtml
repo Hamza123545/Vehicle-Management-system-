@@ -1,0 +1,56 @@
+﻿@model VehicleInsurance.Models.Vehicle
+@{
+    Layout = "../Shared/_Layout.cshtml";
+}
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Edit Vehicle</h4>
+<form method="post" class="forms-sample">
+    <input type="hidden" value="@Model.VehicleID" name="VehicleID" />
+    <div class="form-group">
+        <label for="VehicleName">Vehicle Name</label>
+        <input type="text" class="form-control" id="VehicleName" value="@Model.VehicleName" name="VehicleName" required />
+    </div>
+    <div class="form-group">
+        <label for="OwnerName">Vehicle OwnerName</label>
+        <input type="text" class="form-control" id="OwnerName" value="@Model.VehicleOwnerName" name="VehicleOwnerName" required />
+    </div>
+    <div class="form-group">
+        <label for="VehicleModel">Vehicle Model</label>
+        <input type="text" class="form-control" id="VehicleModel" value="@Model.VehicleModel" name="VehicleModel" required />
+    </div>
+    <div class="form-group">
+        <label for="VehicleModel">Vehicle Version</label>
+        <input type="text" class="form-control" id="VehicleVersion" value="@Model.VehicleVersion" name="VehicleVersion" required />
+    </div>
+    <div class="form-group">
+        <label for="VehicleRate">Vehicle Rate</label>
+        <input type="number" class="form-control" id="VehicleRate" value="@Model.VehicleRate" name="VehicleRate" required />
+    </div>
+                        <div class="form-group">
+                            <label for="VehicleRate">Vehicle Warranty</label>
+                            <input type="text" class="form-control" id="VehicleWarranty" value="@Model.VehicleWarranty" placeholder="Warranty" name="VehicleWarranty" required />
+                        </div>
+    <div class="form-group">
+        <label for="VehicleBodyNumber">Vehicle BodyNumber</label>
+        <input type="text" class="form-control" id="VehicleBodyNumber" value="@Model.VehicleBodyNumber" name="VehicleBodyNumber" required />
+    </div>
+    <div class="form-group">
+        <label for="VehicleEngineNumber">Vehicle EngineNumber</label>
+        <input type="text" class="form-control" id="VehicleEngineNumber" value="@Model.VehicleEngineNumber" name="VehicleEngineNumber" required />
+    </div>
+    <div class="form-group">
+        <label for="VehicleNumber">Vehicle Number</label>
+        <input type="text" class="form-control" id="VehicleNumber" value="@Model.VehicleNumber" name="VehicleNumber" required />
+    </div>
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                        <a href="@Url.Action("index","vehicle")" class="btn btn-light">Cancel</a>
+</form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

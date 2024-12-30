@@ -1,0 +1,174 @@
+﻿@model VehicleInsurance.Models.ReportModels.ReportsViewModel
+
+<h1 class="text-center">Reports</h1>
+
+<hr />
+
+<!-- Monthly Sales Report -->
+<div class="mb-4">
+    <h3>Monthly Sales Report</h3>
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Month/Year</th>
+                <th>Total Policies</th>
+                <th>Total Premium</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.MonthlySales != null && Model.MonthlySales.Count > 0)
+            {
+                foreach (var report in Model.MonthlySales)
+                {
+                            <tr>
+                                <td>@report.MonthYear</td>
+                                <td>@report.TotalPolicies</td>
+                                <td>@report.TotalPremium.ToString("C")</td>
+                            </tr>
+                }
+            }
+            else
+            {
+                    <tr>
+                        <td colspan="3" class="text-center">No data available</td>
+                    </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Vehicle Analysis Report -->
+<div class="mb-4">
+    <h3>Vehicle Analysis Report</h3>
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Vehicle Name</th>
+                <th>Total Policies</th>
+                <th>Total Premium</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.VehicleAnalysis != null && Model.VehicleAnalysis.Count > 0)
+            {
+                foreach (var report in Model.VehicleAnalysis)
+                {
+                            <tr>
+                                <td>@report.VehicleName</td>
+                                <td>@report.TotalPolicies</td>
+                                <td>@report.TotalPremium.ToString("C")</td>
+                            </tr>
+                }
+            }
+            else
+            {
+                    <tr>
+                        <td colspan="3" class="text-center">No data available</td>
+                    </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Claim Reports -->
+<div class="mb-4">
+    <h3>Claim Reports</h3>
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Place of Accident</th>
+                <th>Total Claims</th>
+                <th>Total Claimed Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.ClaimReports != null && Model.ClaimReports.Count > 0)
+            {
+                foreach (var report in Model.ClaimReports)
+                {
+                            <tr>
+                                <td>@report.PlaceOfAccident</td>
+                                <td>@report.TotalClaims</td>
+                                <td>@report.TotalClaimedAmount.ToString("C")</td>
+                            </tr>
+                }
+            }
+            else
+            {
+                    <tr>
+                        <td colspan="3" class="text-center">No data available</td>
+                    </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Policies Due for Renewal -->
+<div class="mb-4">
+    <h3>Policies Due for Renewal</h3>
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Policy Number</th>
+                <th>Customer Name</th>
+                <th>Vehicle Name</th>
+                <th>Expiry Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.PoliciesDue != null && Model.PoliciesDue.Count > 0)
+            {
+                foreach (var report in Model.PoliciesDue)
+                {
+                            <tr>
+                                <td>@report.PolicyNumber</td>
+                                <td>@report.CustomerName</td>
+                                <td>@report.VehicleName</td>
+                                <td>@report.ExpiryDate.ToShortDateString()</td>
+                            </tr>
+                }
+            }
+            else
+            {
+                    <tr>
+                        <td colspan="4" class="text-center">No data available</td>
+                    </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Lapsed Policies -->
+<div class="mb-4">
+    <h3>Lapsed Policies</h3>
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Policy Number</th>
+                <th>Customer Name</th>
+                <th>Vehicle Name</th>
+                <th>Lapsed Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.LapsedPolicies != null && Model.LapsedPolicies.Count > 0)
+            {
+                foreach (var report in Model.LapsedPolicies)
+                {
+                            <tr>
+                                <td>@report.PolicyNumber</td>
+                                <td>@report.CustomerName</td>
+                                <td>@report.VehicleName</td>
+                                <td>@report.LapsedDate.ToShortDateString()</td>
+                            </tr>
+                }
+            }
+            else
+            {
+                    <tr>
+                        <td colspan="4" class="text-center">No data available</td>
+                    </tr>
+            }
+        </tbody>
+    </table>
+</div>

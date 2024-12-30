@@ -1,0 +1,34 @@
+﻿@model VehicleInsurance.Models.Claim
+
+<h2>Create Claim</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="PolicyID">Policy</label>
+        <select asp-for="PolicyID" class="form-control" asp-items="@(new SelectList(ViewBag.Policies, "PolicyID", "PolicyNumber"))">
+            <option value="">Select a policy</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="DateOfAccident">Date of Accident</label>
+        <input type="date" asp-for="DateOfAccident" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="PlaceOfAccident">Place of Accident</label>
+        <input type="text" asp-for="PlaceOfAccident" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="InsuredAmount">Insured Amount</label>
+        <input type="number" asp-for="InsuredAmount" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="ClaimableAmount">Claimable Amount</label>
+        <input type="number" asp-for="ClaimableAmount" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

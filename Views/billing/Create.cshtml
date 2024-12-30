@@ -1,0 +1,92 @@
+﻿@model VehicleInsurance.Models.Billing
+
+@{
+    ViewData["Title"] = "Create Billing";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h4>Billing</h4>
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div class="form-group">
+                <label asp-for="CustomerID" class="control-label"></label>
+                <select asp-for="CustomerID" class="form-control" asp-items="ViewData['CustomerID']"></select>
+                <span asp-validation-for="CustomerID" class="text-danger">CustomerID</span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="PolicyID" class="control-label"></label>
+                <select asp-for="PolicyID" class="form-control" asp-items="ViewData['PolicyID']"></select>
+                <span asp-validation-for="PolicyID" class="text-danger">PolicyID</span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="VehicleID" class="control-label"></label>
+                <select asp-for="VehicleID" class="form-control" asp-items="ViewData['VehicleID']"></select>
+                <span asp-validation-for="VehicleID" class="text-danger">VehicleID</span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="AddressProof" class="control-label"></label>
+                <input asp-for="AddressProof" class="form-control" />
+                <span asp-validation-for="AddressProof" class="text-danger">AddressProof</span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="control-label"></label>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger">PhoneNumber</span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="BillNumber" class="control-label"></label>
+                <input asp-for="BillNumber" class="form-control" />
+                <span asp-validation-for="BillNumber" class="text-danger">BillNumber</span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="VehicleModel" class="control-label"></label>
+                <input asp-for="VehicleModel" class="form-control" />
+                <span asp-validation-for="VehicleModel" class="text-danger">VehicleModel</span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="VehicleRate" class="control-label"></label>
+                <input asp-for="VehicleRate" class="form-control" />
+                <span asp-validation-for="VehicleRate" class="text-danger">VehicleRate</span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="VehicleBodyNumber" class="control-label"></label>
+                <input asp-for="VehicleBodyNumber" class="form-control" />
+                <span asp-validation-for="VehicleBodyNumber" class="text-danger">VehicleBodyNumber</span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="VehicleEngineNumber" class="control-label"></label>
+                <input asp-for="VehicleEngineNumber" class="form-control" />
+                <span asp-validation-for="VehicleEngineNumber" class="text-danger">VehicleEngineNumber</span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="BillingDate" class="control-label"></label>
+                <input asp-for="BillingDate" class="form-control" />
+                <span asp-validation-for="BillingDate" class="text-danger">BillingDate</span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Amount" class="control-label"></label>
+                <input asp-for="Amount" class="form-control" />
+                <span asp-validation-for="Amount" class="text-danger">Amount</span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>

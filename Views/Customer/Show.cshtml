@@ -1,0 +1,75 @@
+﻿@using VehicleInsurance.Models;
+@model List<Customer>
+@{
+    Layout = "../Shared/_Layout.cshtml";
+    ViewData["Title"] = "Customer Management";
+}
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">All Customers</h4>
+                    <div class="table-responsive">
+                        <a href="@Url.Action("Create", "Customer")" class="btn btn-primary">Create New Customer</a>
+                        <table class="table table-striped mt-3">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Password</th>
+                                    <th>Address</th>
+                                    <th>Phone Number</th>
+                                    <th>Address Prove</th>
+                                    <th>Policies</th> 
+                                    <th>CreatedAt</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var customer in Model)
+                                {
+                                    <tr>
+                                        <td>@customer.CustomerID</td>
+                                        <td>@customer.CustomerName</td>
+                                        <td>@customer.Email</td>
+                                        <td>@customer.Password</td>
+                                        <td>@customer.Address</td>
+                                        <td>@customer.PhoneNumber</td>
+                                        <td>@customer.AddressProof</td>
+                                        <td>
+                                            @if (customer.Policies != null)
+                                            {
+                                                <ul>
+                                                    @foreach (var policy in customer.Policies)
+                                                    {
+                                                        <li>@policy.PolicyNumber - @policy.VehicleModel</li>
+                                                    }
+                                                </ul>
+                                            }
+                                            else
+                                            {
+                                                <p>Unavailable</p>
+                                            }
+                                        </td>
+                                        <td>@customer.CreatedAt</td>
+                                        <td>
+                                            <a href="@Url.Action("Details", "Customer", new { id = customer.CustomerID })" class="btn btn-secondary btn-sm">Details</a>
+                                            <a href="@Url.Action("Edit", "Customer", new { id = customer.CustomerID })" class="btn btn-info btn-sm">Edit</a>
+                                            <a href="@Url.Action("Delete", "Customer", new { id = customer.CustomerID })" class="btn btn-danger btn-sm">Delete</a>
+                                        </td>
+
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

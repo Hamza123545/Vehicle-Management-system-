@@ -1,0 +1,48 @@
+﻿@using VehicleInsurance.Models;
+@model List<Expense>
+
+@{
+    Layout = "../Shared/_Layout.cshtml";
+    ViewData["Title"] = "Expense Management";
+}
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">All Expense</h4>
+                    <div class="table-responsive">
+                        <a href="@Url.Action("Create","Expense")" class="btn btn-primary">Create New Expense</a>
+<table class="table table-striped mt-3">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var expense in Model)
+        {
+            <tr>
+                <td>@expense.ExpenseID</td>
+                <td>@expense.ExpenseDate.ToShortDateString()</td>
+                <td>@expense.ExpenseType</td>
+                <td>@expense.Amount</td>
+                                        <td>
+                                            <a href="@Url.Action("Details", "Expense", new { id = expense.ExpenseID })" class="btn btn-secondary btn-sm">Details</a>
+                                            <a href="@Url.Action("Edit", "Expense", new { id = expense.ExpenseID })" class="btn btn-info btn-sm">Edit</a>
+                                            <a href="@Url.Action("Delete", "Expense", new { id = expense.ExpenseID })" class="btn btn-danger btn-sm">Delete</a>
+                                        </td>
+            </tr>
+        }
+    </tbody>
+</table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

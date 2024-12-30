@@ -1,0 +1,167 @@
+﻿@using VehicleInsurance.Models
+@model Policy
+@{
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Create Policy</h4>
+                    <form asp-action="Create" method="post" class="forms-sample" enctype="multipart/form-data">
+
+                        <div class="form-group">
+                            <label for="PolicyNumber">Policy Number</label>
+                            <input type="text" name="PolicyNumber" class="form-control" id="PolicyNumber" placeholder="Policy Number" required maxlength="20">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="PolicyDate">Policy Date</label>
+                            <input type="date" name="PolicyDate" class="form-control" id="PolicyDate" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="PolicyDuration">Policy Duration (in years)</label>
+                            <input type="number" name="PolicyDuration" class="form-control" id="PolicyDuration" required min="1" max="120">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="CustomerID">Customer</label>
+                            <select name="CustomerID" class="form-control" id="CustomerID" required>
+                                <option value="">Select Customer</option>
+                                @foreach (var customer in ViewBag.Customers as List<VehicleInsurance.Models.Customer>)
+                                {
+                                    <option value="@customer.CustomerID">@customer.CustomerName</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="PhoneNumber">Customer PhoneNumber</label>
+                            <select name="PhoneNumber" class="form-control" id="PhoneNumber" required>
+                                <option value="">Select PhoneNumber</option>
+                                @foreach (var customer in ViewBag.Customers as List<VehicleInsurance.Models.Customer>)
+                                {
+                                    <option value="@customer.PhoneNumber">@customer.PhoneNumber</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="VehicleID">Vehicle Name</label>
+                            <select name="VehicleID" class="form-control" id="VehicleID" required>
+                                <option value="">Select Vehicle</option>
+                                @foreach (var vehicle in ViewBag.Vehicles as List<VehicleInsurance.Models.Vehicle>)
+                                {
+                                    <option value="@vehicle.VehicleID">@vehicle.VehicleName</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="VehicleNumber">Vehicle Number</label>
+                            <select name="VehicleNumber" class="form-control" id="VehicleNumber" required>
+                                <option value="">Select Number</option>
+                                @foreach (var vehicle in ViewBag.Vehicles as List<VehicleInsurance.Models.Vehicle>)
+                                {
+                                    <option value="@vehicle.VehicleNumber">@vehicle.VehicleNumber</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="VehicleRate">Vehicle Rate</label>
+                            <select name="VehicleRate" class="form-control" id="VehicleRate" required>
+                                <option value="">Select Rate</option>
+                                @foreach (var vehicle in ViewBag.Vehicles as List<VehicleInsurance.Models.Vehicle>)
+                                {
+                                    <option value="@vehicle.VehicleRate">@vehicle.VehicleRate</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="VehicleWarranty">Vehicle Warranty</label>
+                            <select name="VehicleWarranty" class="form-control" id="VehicleWarranty" required>
+                                <option value="">Select Warranty</option>
+                                @foreach (var vehicle in ViewBag.Vehicles as List<VehicleInsurance.Models.Vehicle>)
+                                {
+                                    <option value="@vehicle.VehicleWarranty">@vehicle.VehicleWarranty</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="VehicleModel">Vehicle Model</label>
+                            <select name="VehicleModel" class="form-control" id="VehicleModel" required>
+                                <option value="">Select Model</option>
+                                @foreach (var vehicle in ViewBag.Vehicles as List<VehicleInsurance.Models.Vehicle>)
+                                {
+                                    <option value="@vehicle.VehicleModel">@vehicle.VehicleModel</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="VehicleVersion">Vehicle Version</label>
+                            <select name="VehicleVersion" class="form-control" id="VehicleVersion" required>
+                                <option value="">Select Version</option>
+                                @foreach (var vehicle in ViewBag.Vehicles as List<VehicleInsurance.Models.Vehicle>)
+                                {
+                                    <option value="@vehicle.VehicleVersion">@vehicle.VehicleVersion</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="VehicleBodyNumber">Vehicle BodyNumber</label>
+                            <select name="VehicleBodyNumber" class="form-control" id="VehicleBodyNumber" required>
+                                <option value="">Select BodyNumber</option>
+                                @foreach (var vehicle in ViewBag.Vehicles as List<VehicleInsurance.Models.Vehicle>)
+                                {
+                                    <option value="@vehicle.VehicleBodyNumber">@vehicle.VehicleBodyNumber</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="VehicleEngineNumber">Vehicle EngineNumber</label>
+                            <select name="VehicleEngineNumber" class="form-control" id="VehicleEngineNumber" required>
+                                <option value="">Select EngineNumber</option>
+                                @foreach (var vehicle in ViewBag.Vehicles as List<VehicleInsurance.Models.Vehicle>)
+                                {
+                                    <option value="@vehicle.VehicleEngineNumber">@vehicle.VehicleEngineNumber</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="AddressProof">Address Proof</label>
+                            <select name="AddressProof" class="form-control" id="AddressProof" required>
+                                <option value="">Select AddressProof</option>
+                                @foreach (var customer in ViewBag.Customers as List<VehicleInsurance.Models.Customer>)
+                                {
+                                    <option value="@customer.AddressProof">@customer.AddressProof</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="IsActive">Is Active?</label>
+                            <select name="IsActive" class="form-control" id="IsActive" required>
+                                <option value="true">Yes</option>
+                                <option value="false">No</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary mr-2">Create</button>
+                        <a href="@Url.Action("Index", "Policy")" class="btn btn-light">Cancel</a>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

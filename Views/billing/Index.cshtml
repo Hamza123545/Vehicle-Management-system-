@@ -1,0 +1,40 @@
+﻿@model IEnumerable<VehicleInsurance.Models.Billing>
+
+@{
+    ViewData["Title"] = "Billing Index";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.BillNumber)</th>
+            <th>@Html.DisplayNameFor(model => model.Customer.CustomerName)</th>
+            <th>@Html.DisplayNameFor(model => model.Policy.PolicyNumber)</th>
+            <th>@Html.DisplayNameFor(model => model.Vehicle.VehicleModel)</th>
+            <th>@Html.DisplayNameFor(model => model.Amount)</th>
+            <th>@Html.DisplayNameFor(model => model.BillingDate)</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var billing in Model)
+        {
+            <tr>
+                <td>@billing.BillNumber</td>
+                <td>@billing.Customer.CustomerName</td>
+                <td>@billing.Policy.PolicyNumber</td>
+                <td>@billing.Vehicle.VehicleModel</td>
+                <td>@billing.Amount</td>
+                <td>@billing.BillingDate.ToString("yyyy-MM-dd")</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Billing", new { id = billing.BillID })" class="btn btn-warning">Edit</a>
+                    <a href="@Url.Action("Delete", "Billing", new { id = billing.BillID })" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Create", "Billing")" class="btn btn-primary">Create New Billing</a>
