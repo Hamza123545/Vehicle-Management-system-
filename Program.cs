@@ -16,7 +16,7 @@ namespace VehicleInsurance
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}"
+                pattern: "{controller=Admin}/{action=Index}"
                 );
 
                 
